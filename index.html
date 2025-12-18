@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - Tic Tac Toe Aisha</title>
+    
+    <!-- Using Inter Font for a Professional Tech Look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #0f172a; /* Deep Navy */
+            --accent-color: #3b82f6; /* Bright Blue */
+            --bg-color: #f8fafc; /* Very Light Blue-Grey */
+            --card-bg: #ffffff;
+            --text-main: #334155;
+            --text-light: #64748b;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Top Header Strip */
+        .header-strip {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .header-strip h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .header-strip p {
+            opacity: 0.8;
+            font-weight: 300;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 800px;
+            margin: -40px auto 40px auto; /* Overlap effect */
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            padding: 40px;
+            position: relative;
+            border: 1px solid var(--border-color);
+        }
+
+        /* App Metadata Card */
+        .meta-card {
+            background-color: #eff6ff;
+            border: 1px solid #dbeafe;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .meta-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .meta-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-light);
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .meta-value {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--primary-color);
+            word-break: break-all;
+        }
+
+        /* Content Styling */
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f1f5f9;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        ul {
+            margin-bottom: 20px;
+            list-style: none;
+        }
+
+        li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 6px;
+            height: 6px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+        }
+
+        /* Contact Box */
+        .contact-box {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .contact-email {
+            display: inline-block;
+            margin-top: 10px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        .contact-email:hover {
+            background-color: var(--accent-color);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-light);
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .header-strip {
+                padding: 40px 20px 60px 20px;
+            }
+            .container {
+                margin: -30px 15px 30px 15px;
+                padding: 25px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header-strip">
+        <h1>Terms & Conditions</h1>
+        <p>Last Updated: 2024</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <!-- App Details Grid -->
+        <div class="meta-card">
+            <div class="meta-item">
+                <span class="meta-label">App Name</span>
+                <span class="meta-value">Tic Tac Toe Aisha</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Package Name</span>
+                <span class="meta-value">com.aisha.tictactoe</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Developer</span>
+                <span class="meta-value">devnur</span>
+            </div>
+        </div>
+
+        <p class="intro">
+            By downloading or using the app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app.
+        </p>
+
+        <h2>1. App Overview</h2>
+        <p><strong>Tic Tac Toe Aisha</strong> is a simple casual game designed for entertainment purposes only. The game is designed to work with or without an internet connection, depending on device conditions.</p>
+
+        <h2>2. Usage of the App</h2>
+        <ul>
+            <li>The app is provided for personal and non-commercial use only.</li>
+            <li>Users are responsible for how they use the app.</li>
+            <li>The app must not be used for any illegal or harmful activity.</li>
+        </ul>
+
+        <h2>3. Game Functionality</h2>
+        <ul>
+            <li>The game is provided “as is” without any guarantees of uninterrupted performance.</li>
+            <li>Game behavior may vary depending on device performance or network availability.</li>
+            <li>Temporary issues such as lag, delay, or reset may occur.</li>
+        </ul>
+
+        <h2>4. Data & Privacy</h2>
+        <p>We value your privacy. Regarding data usage:</p>
+        <ul>
+            <li>The game does not require user registration or login.</li>
+            <li>The app does not collect, store, or share any personally identifiable information.</li>
+            <li>No sensitive user data is accessed or processed.</li>
+            <li>Any game-related data is used only to operate the game features locally on your device.</li>
+        </ul>
+
+        <h2>5. Children’s Use</h2>
+        <ul>
+            <li>The game is suitable for all age groups (Family Friendly).</li>
+            <li>The app contains no violent, sexual, or inappropriate content.</li>
+            <li>Parental guidance is recommended for younger users to ensure safe device usage.</li>
+        </ul>
+
+        <h2>6. Intellectual Property</h2>
+        <ul>
+            <li>All content, design, graphics, and functionality of <strong>Tic Tac Toe Aisha</strong> belong to the developer (devnur).</li>
+            <li>Copying, modifying, or redistributing any part of the app or our trademarks without prior written permission is prohibited.</li>
+        </ul>
+
+        <h2>7. Limitation of Liability</h2>
+        <p>The developer is not responsible for any direct or indirect damages resulting from the use of the app. No guarantees are made regarding specific game outcomes, scores, or compatibility with all devices.</p>
+
+        <h2>8. Changes to Terms</h2>
+        <p>We may update our Terms and Conditions from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Terms and Conditions on this page. These changes are effective immediately after they are posted.</p>
+
+        <h2>9. Contact Information</h2>
+        <div class="contact-box">
+            <p>If you have any questions or suggestions about our Terms and Conditions, do not hesitate to contact us at:</p>
+            <a href="mailto:sahanurmiya431@gmail.com" class="contact-email">sahanurmiya431@gmail.com</a>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        &copy; 2024 devnur. All rights reserved.
+    </footer>
+
+</body>
+</html>
